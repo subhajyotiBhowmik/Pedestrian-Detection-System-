@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedestrian Detection</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .video-container {
+            position: relative;
+        }
+        #video-stream {
+            width: 640px;
+            height: 480px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .data-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pedestrian Detection</h1>
+        <div class="video-container">
+            <img id="video-stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+            <div class="overlay">
+                <p>Pedestrians Detected: <span id="pedestrian-count">0</span></p>
+                <p>Distance from Car: <span id="distance">0 meters</span></p>
+            </div>
+        </div>
+        <div class="data-container">
+            <!-- Add additional data here if needed -->
+        </div>
+    </div>
+    <!-- Add JavaScript code here if needed -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Alert Location Tracking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Accident Alert Location Tracking System</h1>
+        <button class="button" onclick="sendLocation()">Send Location</button>
+        <div class="info">
+            <p><strong>Latitude:</strong> <span id="latitude">-</span></p>
+            <p><strong>Longitude:</strong> <span id="longitude">-</span></p>
+            <p><strong>Speed:</strong> <span id="speed">-</span> km/h</p>
+            <p><strong>Link:</strong> <a href="#" id="map-link" target="_blank">View on Map</a></p>
+            <p><strong>Message:</strong> <span id="message">-</span></p>
+        </div>
+    </div>
+
+    <script>
+        function sendLocation() {
+            // You can add JavaScript code to handle sending location here
+            // For example, use AJAX to send location data to the server
+            alert("Location sent!");
+        }
+    </script>
+</body>
+</html>
